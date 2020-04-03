@@ -26,7 +26,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 class RedmondSensor(Entity):
 
     def __init__(self, kettler):
-        self._name = 'Сенсоры чайника'
+        self._name = 'Последняя синхронизация'
         self._icon = 'mdi:sync'
         self._kettler = kettler
 
