@@ -23,7 +23,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 class RedmondSwitchBacklight(SwitchDevice):
 
     def __init__(self, kettler):
-        self._name = 'redmondusebacklight'
+        self._name = 'Фоновая подсветка чайника'
         self._icon = 'mdi:floor-lamp'
         self._kettler = kettler
 
@@ -58,7 +58,7 @@ class RedmondSwitchBacklight(SwitchDevice):
 class RedmondSwitchHold(SwitchDevice):
 
     def __init__(self, kettler):
-        self._name = 'redmondhold'
+        self._name = 'Поддержка температуры чайника'
         self._icon = 'mdi:car-brake-hold'
         self._kettler = kettler
 
@@ -93,7 +93,7 @@ class RedmondSwitchHold(SwitchDevice):
 class RedmondSwitchAuthorize(SwitchDevice):
 
     def __init__(self, kettler):
-        self._name = 'redmondauthorize'
+        self._name = 'Авторизация чайника'
         self._icon = 'mdi:bluetooth-connect'
         self._kettler = kettler
 
