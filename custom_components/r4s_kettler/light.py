@@ -21,7 +21,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 class RedmondLight(Light):
 
     def __init__(self, kettler):
-        self._name = 'redmondlight'
+        self._name = 'Подсветка чайника'
         self._hs = (0,0)
         self._icon = 'mdi:lightbulb'
         self._kettler = kettler
